@@ -39,18 +39,20 @@ input, label {
 #main-container-h1 {
     text-align: center;
     margin-bottom: 25px;
-    font-size: 1.6rem; /* adaptada ao elemento root */
+    font-size: 1.6rem; 
 }
 .cabecalho {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 24px;
+    flex-direction: row;    
+    justify-content: end;
+    padding: 24px;    
+    
 }
 
 .cabecalho-imagem {
-    height: 72px;
+    height: 80px;
+    position: absolute; top: 30px; left: 50px;
+        
 }
 
 .cabecalho-menu {
