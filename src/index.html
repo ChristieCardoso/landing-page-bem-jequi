@@ -35,17 +35,17 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="/src/img/wwww.jpg " class="d-block w-100" alt="...">
+                    <img src="/src/img/Foto0.jpg " class="d-block w-100" alt="..." >
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="/src/img/eeee.jpg" class="d-block w-100" alt="...">
+                    <img src="/src/img/Foto.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/src/img/qqqq.jpg" class="d-block w-100" alt="...">
+                    <img src="/src/img/Foto4.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
@@ -79,21 +79,26 @@
                 <form id="register-fora">
                     <div class="full-box">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2"
+                        <input type="email" id="email" placeholder="Digite seu e-mail" data-min-length="2"
                             data-email-validate>
                     </div>
                     <div class="half-box spacing">
                         <label for="name">Nome</label>
-                        <input type="text" name="name" id="name" placeholder="Digite seu nome">
+                        <input type="text" id="name" placeholder="Digite seu nome">
                     </div>
                     <div class="half-box">
                         <label for="lastname">Sobrenome</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="Digite seu seu sobrenome">
+                        <input type="text" id="lastname" placeholder="Digite seu sobrenome" >
                     </div>
-
+                    <div class="half-box spacing">
+                        <label for="name">Celular</label>
+                        <input type="tel" id="name" placeholder="Digite seu Celular" pattern="[0-9]({3})[0-9]{5}-[0-9]{4}">
+                    </div>
                     <div class="full-box">
                         <input type="submit" id="btn-submit" value="Enviar">
                     </div>
+
+
                 </form>
                 <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -120,6 +125,7 @@
                         <div class="form-group"><label for="uf">UF</label>
                             <input type="text" class="form-control" id="uf">
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -136,21 +142,12 @@
                         fill="#FAFAFA" />
                 </svg>
             </a>
-
-
         </main>
-
         <footer class="rodape">
             <img class="rodape-imagem" src="./img/logo.png">
 
-
         </footer>
-
-
-
     </div>
-
-
     <script src="js/buscaCep.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
