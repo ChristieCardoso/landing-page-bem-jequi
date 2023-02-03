@@ -12,141 +12,125 @@
 
 </head>
 
+<header class="cabecalho">
+    <nav class="cabecalho-menu">
+        <a class="cabecalho-menu-item" href="#">Home</a>
+        <a class="cabecalho-menu-item" href="#">Fotos</a>
+        <a class="cabecalho-menu-item" href="#">História</a>
+    </nav>
+</header>
+
 <body>
+
     <div class="container-fluid">
-        <header class="cabecalho">
-            <nav class="cabecalho-menu">
-                <a class="cabecalho-menu-item" href="#">Home</a>
-                <a class="cabecalho-menu-item" href="#">Fotos</a>
-                <a class="cabecalho-menu-item" href="#">Sobre</a>
-            </nav>
-
-        </header>
-
         <img class="cabecalho-imagem" src="./img/logo2.png" alt="Logo da Bem Jequi">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="/src/img/Foto0.jpg " class="d-block w-100" alt="..." >
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="/src/img/Foto.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/src/img/Foto4.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
-                </div>
+              <div class="carousel-item active">
+                <img src="img/Foto4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Foto0.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Foto.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
             </button>
-        </div>
+            
+          </div>
 
         <main>
+            <img src="img/Untitled_resized.jpg" class="rounded" alt="...">
 
-            <section class="conteudo-secundario">
-                <h3 class="conteudo-secundario-titulo">História</h3>
-                <p class="conteudo-secundario-paragrafo">Criada em 2021, a <strong>BEM JEQUI</strong> marca de
-                    Laticínios de
-                    Minas Gerais entrou no mercado alimentício para oferecer ao consumidor uma mussarela de qualidade
-                    diferenciada, que resultam da combinação dos conceitos de tradição, modernidade, investimento e
-                    qualidade plena. Uma receita de sucesso que permitiu o crescimento da empresa. </p>
-
-            </section>
-
-            <div id="main-container">
+            <div id="main-container" class="formulario">
                 <h1> Faça já seu pedido!</h1>
-                <form id="register-fora">
-                    <div class="full-box">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="Digite seu e-mail" data-min-length="2"
-                            data-email-validate>
-                    </div>
-                    <div class="half-box spacing">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" placeholder="Digite seu nome">
-                    </div>
-                    <div class="half-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input type="text" id="lastname" placeholder="Digite seu sobrenome" >
-                    </div>
-                    <div class="half-box spacing">
-                        <label for="name">Celular</label>
-                        <input type="tel" id="name" placeholder="Digite seu Celular" pattern="[0-9]({3})[0-9]{5}-[0-9]{4}">
-                    </div>
-                    <div class="full-box">
-                        <input type="submit" id="btn-submit" value="Enviar">
-                    </div>
+                <form class="row g-3">
+                    <label for="validationServer05" class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control is-invalid"  placeholder="Digite seu nome" pattern="[a-zA-Z\s]+$" id="validationServer05" 
+                        aria-describedby="validationServer05Feedback" required>
 
 
-                </form>
-                <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Consultar Cep
-                </button>
-                <div class="collapse mt-3" id="collapseExample">
-                    <div class="card card-body">
-                        <div class="form-group">
-                            <label for="cep">Cep</label>
-                            <input type="text" class="form-control" maxlength="9" id="cep">
-                        </div>
-                        <div class="form-group">
-                            <label for="logradouro">Logradouro</label>
-                            <input type="text" class="form-control" id="logradouro">
-                        </div>
-                        <div class="form-group">
-                            <label for="bairro">Bairro</label>
-                            <input type="text" class="form-control" id="bairro">
-                        </div>
-                        <div class="form-group">
-                            <label for="localidade">Localidade</label>
-                            <input type="text" class="form-control" id="localidade">
-                        </div>
-                        <div class="form-group"><label for="uf">UF</label>
-                            <input type="text" class="form-control" id="uf">
-                        </div>
-                        
+                    <label for="validationServer05" class="form-label">Celular</label>
+                    <input type="tel" class="form-control is-invalid" id="validationServer05" maxlength="15" placeholder="(99) 99999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{5})-([0-9]{4})"
+                        aria-describedby="validationServer05Feedback" required>
+
+
+                    <label for="validationServer05" class="form-label">Quantidade</label>
+                    <input type="number" class="form-control is-invalid" id="validationServer05"
+                        aria-describedby="validationServer05Feedback" required>
+
+
+                    <label for="validationServer05" class="form-label">Cep</label>
+                    <input type="text" class="form-control is-invalid" maxlength="9" placeholder="99999-999" pattern="([0-9]{5})-([0-9]{3})" id="validationServer05"
+                        aria-describedby="validationServer05Feedback" required>
+
+                    <label for="validationServer03" class="form-label">Número/Complemento</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer03"
+                        aria-describedby="validationServer03Feedback" required>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
                     </div>
-                </div>
+                    <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Consultar Cep
+                    </button>
+                    <div class="collapse mt-3" id="collapseExample">
+                        <div class="card card-body">
+                            <div class="form-group">
+                                <label for="cep">Cep</label>
+                                <input type="text" class="form-control" maxlength="9" id="cep">
+                            </div>
+                            <div class="form-group">
+                                <label for="logradouro">Logradouro</label>
+                                <input type="text" class="form-control" id="logradouro">
+                            </div>
+                            <div class="form-group">
+                                <label for="bairro">Bairro</label>
+                                <input type="text" class="form-control" id="bairro">
+                            </div>
+                            <div class="form-group">
+                                <label for="localidade">Localidade</label>
+                                <input type="text" class="form-control" id="localidade">
+                            </div>
+                            <div class="form-group"><label for="uf">UF</label>
+                                <input type="text" class="form-control" id="uf">
+                            </div>
+                        </div>
+                    </div>
+
             </div>
 
-            <a href="https://api.whatsapp.com/send?phone=5531993034536&text=Obrigado por entrar em contato."
-                target="_blank" style="position:fixed;bottom:20px;right:30px;">
-                <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512"
-                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"
-                        fill="#4CAF50" />
-                    <path
-                        d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
-                        fill="#FAFAFA" />
-                </svg>
-            </a>
-        </main>
-        <footer class="rodape">
-            <img class="rodape-imagem" src="./img/logo.png">
+            </form>
 
-        </footer>
+
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=5531993034536&text=Obrigado por entrar em contato." target="_blank"
+        style="position:fixed;bottom:20px;right:30px;">
+        <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512"
+            xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"
+                fill="#4CAF50" />
+            <path
+                d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
+                fill="#FAFAFA" />
+        </svg>
+    </a>
+    </main>
+    <footer class="rodape">
+        <img class="rodape-imagem" src="./img/logo.png">
+
+    </footer>
     </div>
     <script src="js/buscaCep.js"></script>
     <script src="js/main.js"></script>
